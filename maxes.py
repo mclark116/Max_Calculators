@@ -8,7 +8,7 @@ def max_percents():
     else:
         calculator = (pr*(1/(1-(.025*reps))))
     print("Your projected max is {}.".format(round(calculator)))
-    print("\nWould you like to continue?")
+    
     
 def max_reps():
     hope = int(input("\nPlease enter your projected 1-rep max goal: "))
@@ -36,6 +36,7 @@ while True:
         continue
     if answer == 1:
         max_percents()
+        print("\nWould you like to continue?")
         continue
     elif answer == 2:
         max_reps()
